@@ -1,5 +1,57 @@
 # ERC20 Token Finder CLI
 
+Find ERC20 tokens across chains by symbol right in your terminal!
+
+## Usage Examples:
+
+Search by chain id and symbol
+
+```bash
+❯ token 1 USDC
+USDC (USDCoin)
+  Chain: 1
+  Address: 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
+  Decimals: 6
+```
+
+2. Search by chain id
+
+```bash
+❯ token 42161
+1INCH (1inch)
+  Chain: 42161
+  Address: 0x6314C31A7a1652cE482cffe247E9CB7c3f4BB9aF
+  Decimals: 18
+
+AAVE (Aave)
+  Chain: 42161
+  Address: 0xba5DdD1f9d7F570dc94a51479a000E3BCE967196
+  Decimals: 18
+```
+
+3. Search by symbol (case insensitive)
+
+```bash
+❯ token USDc
+USDC (USDCoin)
+  Chain: 1
+  Address: 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
+  Decimals: 6
+
+USDC (USDCoin)
+  Chain: 10
+  Address: 0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85
+  Decimals: 6
+
+```
+
+4. Find and output token address. Useful in chain of terminal commands
+
+```bash
+❯ token -a 1 USDC
+0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
+```
+
 ## Getting started
 
 ```bash
