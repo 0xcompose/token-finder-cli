@@ -101,6 +101,8 @@ TOKEN_LIST_URL=https://... token 1 USDC
 token --refresh
 ```
 
+NOTE: for a permanent use of specific token list set `TOKEN_LIST_URL` in your `.zshrc` or any other shell's that you use config file.s and call `token --refresh`, just in case.
+
 ## Uninstall
 
 ```bash
