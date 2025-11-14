@@ -54,6 +54,11 @@ USDC (USDCoin)
 
 ## Getting started
 
+Clone project
+```
+git clone https://github.com/0xcompose/token-finder-cli.git
+```
+
 ```bash
 sudo make install
 ```
